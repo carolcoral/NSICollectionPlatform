@@ -129,5 +129,8 @@ dmypy.json
 .pyre/
 
 # vue
-vue-admin-master/site-packages/
-vue-admin-master/dist/
+nsi-collection-platform/site-packages/
+nsi-collection-platform/dist/
+nsi-collection-platform/.idea
+
+NSICollectionPlatformServer/.idea
