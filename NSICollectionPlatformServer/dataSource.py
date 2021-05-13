@@ -9,7 +9,6 @@
     @Description: 
 """
 import pymysql
-import json
 
 
 class DataSource:

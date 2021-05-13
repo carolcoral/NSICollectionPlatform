@@ -8,16 +8,16 @@
 * userManager.py
 > 用户信息管理模块。提供对用户增、删、改、查、登录、注册等功能。
 
-* dns.py
+* dnsResolve.py.py
 > DNS解析模块。提供对dns进行解析的功能。
 
-* subdomain.py
+* subdomainLookup.py
 > 子域名解析模块。
 
-* email.py
+* emailGrabbing.py
 > 邮箱内容解析模块。目前只对指定邮箱账号中的内容进行扒取和解析。
 
-* port.py
+* portDetection.py
 > 端口检测模块。用于检测指定地址上指定端口的状态（开启/关闭）。
 
 * requirements.txt
