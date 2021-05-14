@@ -11,8 +11,8 @@
       <!--工具框-->
       <div class="handle-box" style="width: 100%">
         <div>
-          <el-input v-model="keyword" placeholder="请输入邮箱关键字，例如: led"  style="float: left; width: 200px; margin: 0 10px 10px 0"></el-input>
-          <el-input v-model="email_suffix" placeholder="请输入邮箱后缀，例如： hotmail.com"  style="float: left; width: 100px; margin: 0 10px 10px 0" :min=0 type="number"></el-input>
+          <el-input v-model="keyword" placeholder="请输入邮箱关键字，例如: led"  style="float: left; width: 220px; margin: 0 10px 10px 0"></el-input>
+          <el-input v-model="email_suffix" placeholder="请输入邮箱后缀，例如： hotmail.com"  style="float: left; width: 300px; margin: 0 10px 10px 0"></el-input>
           <el-button type="primary" icon="el-icon-search" @click="getEmailGrabbing(true)" style="float:left;">搜索</el-button>
         </div>
 
@@ -21,8 +21,8 @@
       <!--列表-->
       <el-table :data="dataList" border class="table" ref="dataList" header-cell-class-name="table-header" v-loading="listLoading">
         <el-table-column prop="keyword" label="抓取关键字" min-width="40" sortable :show-overflow-tooltip="true"></el-table-column>
-        <el-table-column prop="grabbingEngine" label="邮箱账号信息抓取来源" min-width="40" sortable></el-table-column>
-        <el-table-column prop="emailAddress" label="邮箱账号" min-width="40" sortable :show-overflow-tooltip="true"></el-table-column>
+        <el-table-column prop="grabbingEngine" label="邮箱账号信息抓取来源" min-width="120" sortable></el-table-column>
+        <el-table-column prop="emailAddress" label="邮箱账号" min-width="120" sortable :show-overflow-tooltip="true"></el-table-column>
       </el-table>
 
     </div>
@@ -48,6 +48,7 @@ export default {
         this.$message.warning("域名不能为空")
         return false;
       }
+      this.$message.success("开始抓取，等数据量过大，请稍等!")
       emailGrabbing({
         "keyword": this.keyword,
         "email_suffix": this.email_suffix

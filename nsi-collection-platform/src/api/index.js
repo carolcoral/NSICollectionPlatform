@@ -12,6 +12,7 @@ request.interceptors.request.use(
         //     config.headers['Content-Type'] = 'application/x-www-form-urlencoded';
         //     config.headers["user_name"] = "";
         // }
+        config.timeout = 12000
         return config;
     }
 );
