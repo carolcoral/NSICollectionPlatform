@@ -13,9 +13,14 @@
             <el-button slot="prepend" icon="el-icon-lx-lock"></el-button>
           </el-input>
         </el-form-item>
+        <el-form-item prop="rePassword">
+          <el-input type="password" placeholder="password" v-model="param.rePassword">
+            <el-button slot="prepend" icon="el-icon-lx-lock"></el-button>
+          </el-input>
+        </el-form-item>
         <div class="login-btn">
-          <el-button type="primary" @click="submitForm()" style="float:left;width: 45%;">返回登录</el-button>
-          <el-button type="primary" @click="register()" style="float: none;width: 45%;" disabled>注册</el-button>
+          <el-button type="primary" @click="returnLogin()" style="float:left;width: 45%;">返回登录</el-button>
+          <el-button type="primary" @click="register()" style="float: none;width: 45%;">注册</el-button>
         </div>
       </el-form>
     </div>
@@ -23,23 +28,42 @@
 </template>
 
 <script>
-import { login } from '../../api/index';
+import { register } from '../../api/index';
 export default {
   data() {
     return {
       param: {
         username: '',
         password: '',
+        rePassword: ''
       },
       rules: {
         username: [{ required: true, message: '请输入用户名', trigger: 'blur' }],
         password: [{ required: true, message: '请输入密码', trigger: 'blur' }],
+        rePassword: [{ required: true, message: '请再次输入密码', trigger: 'blur' }],
       },
     };
   },
   methods: {
+    returnLogin: function(){
+      this.$router.push({
+        path: '/login'
+      })
+    },
     register: function(){
-      this.$router.push({ path: '/register'})
+      if (this.password !== this.rePassword){
+        this.$message.error("两次密码不一致")
+        return false;
+      }
+      this.$confirm('确认提交吗？', '提示', {}).then(() => {
+        register(this.param).then((res) => {
+          this.$message({
+            message: "注册成功",
+            type: 'success'
+          });
+          this.returnLogin()
+        });
+      });
     }
   },
 };

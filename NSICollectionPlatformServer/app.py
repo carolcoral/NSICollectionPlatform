@@ -196,10 +196,17 @@ def subdomain_lookup():
 @app.route('/admin/email/grabbing', methods=['GET'])
 def email_grabbing():
     """
-    163邮箱账号内容扒取
+    邮箱账号抓取
     :return:
     """
-    pass
+    keyword = request.values["keyword"]
+    email_suffix = request.values["email_suffix"]
+    if keyword is None or keyword == "":
+        return result(code="100000", desc="FAILED", data="搜索关键值不能为空")
+    if keyword is None or keyword == "":
+        return result(code="100000", desc="FAILED", data="搜索关键值不能为空")
+    email_grabbing_result = emailGrabbing.EmailAccountGrabbing(keyword=keyword, email_suffix=email_suffix).grabbing()
+    return result(data=email_grabbing_result)
 
 
 @app.route('/admin/port/detection', methods=['GET'])

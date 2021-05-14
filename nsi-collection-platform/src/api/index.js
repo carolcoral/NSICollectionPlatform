@@ -1,7 +1,7 @@
 import request from '../utils/request';
 
-let base = '/admin';
-// let base = 'http://127.0.0.1:8080/admin';
+// let base = '/admin';
+let base = 'http://127.0.0.1:5000/admin';
 
 //过滤请求内容
 request.interceptors.request.use(

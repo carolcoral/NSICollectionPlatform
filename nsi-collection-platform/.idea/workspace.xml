@@ -2,69 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98b847f7-eeca-42e7-9900-dc856361f82a" name="Default Changelist" comment="优化db当前数据页展示">
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/dnsResolve.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/emailGrabbing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/Flask-2.0.0-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/Jinja2-3.0.0-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/MarkupSafe-2.0.0-cp39-cp39-win_amd64.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/PyMySQL-1.0.2-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/Werkzeug-2.0.0-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1.tar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/requires.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/dist/bs4-0.0.1-py3.9.egg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/setup.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/certifi-2020.12.5-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/chardet-4.0.0-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/click-8.0.0-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/idna-3.1-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/itsdangerous-2.0.0-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/requests-2.25.1-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/portDetection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/subdomainLookup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/userManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../nsi.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/NSICollectionPlatformServer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T120943.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T120952.400.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121052.400.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121140.400.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121209.400.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121222.400.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121317.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121450.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121728.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121802.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T122313.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T122439.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T122501.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T122729.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123005.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123248.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123430.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123507.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123524.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123622.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/urllib3-1.25.1-py2.py3-none-any.whl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/dataSource.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/dataSource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/emailGrabbing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/emailGrabbing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/dist/bs4-0.0.1-py3.9.egg" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/dist/bs4-0.0.1-py3.9.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/subdomainLookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/subdomainLookup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +39,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -183,6 +128,7 @@
       <workItem from="1620829356244" duration="2706000" />
       <workItem from="1620832095044" duration="3180000" />
       <workItem from="1620901480362" duration="12905000" />
+      <workItem from="1620957714199" duration="4418000" />
     </task>
     <task id="LOCAL-00001" summary="1. 业支列表&#10;2. 东信北邮列表&#10;3. 登录&#10;4. 计划任务&#10;5. 系统服务&#10;6. 接口列表&#10;7. 公共头&#10;8. 公共侧边栏&#10;9. 阿里云图标库&#10;10. mock数据返回接口修改list为data（与后端保持一致）">
       <created>1591256675301</created>

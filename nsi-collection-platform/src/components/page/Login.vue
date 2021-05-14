@@ -20,7 +20,7 @@
         </el-form-item>
         <div class="login-btn">
           <el-button type="primary" @click="submitForm()" style="float:left;width: 45%;">登录</el-button>
-          <el-button type="primary" @click="register()" style="float: none;width: 45%;">注册</el-button>
+          <el-button type="primary" @click="toRegister()" style="float: none;width: 45%;">注册</el-button>
         </div>
       </el-form>
     </div>
@@ -51,8 +51,24 @@ export default {
   //     }).next('/')
   // },
   methods: {
-    async submitForm() {
-      await this.$refs.login.validate(valid => {
+    // async submitForm() {
+    //   await this.$refs.login.validate(valid => {
+    //     if (valid) {
+    //       login(this.param).then(res => {
+    //         this.$message.success('登录成功');
+    //         localStorage.setItem('user_name', this.param.username);
+    //         localStorage.setItem('token', res['token'].toString());
+    //         localStorage.setItem('role', res['role'].toString());
+    //         this.$router.push({ path: '/UserManager' });
+    //       })
+    //     } else {
+    //       this.$message.error('请输入账号和密码');
+    //       return false;
+    //     }
+    //   });
+    // },
+     submitForm() {
+       this.$refs.login.validate(valid => {
         if (valid) {
           login(this.param).then(res => {
             this.$message.success('登录成功');
@@ -67,7 +83,7 @@ export default {
         }
       });
     },
-    register: function(){
+    toRegister: function(){
       this.$router.push({ path: '/register'})
     }
   },

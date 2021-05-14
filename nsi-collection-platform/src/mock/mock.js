@@ -1,6 +1,5 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { interfacesInfo } from './data/interfaces';
 import Mock from 'mockjs';
 
 export default {

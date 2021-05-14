@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170acc99-a63b-462c-abfd-cf97f0ec009c" name="Default Changelist" comment="" />
+    <list default="true" id="170acc99-a63b-462c-abfd-cf97f0ec009c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/urllib3-1.25.1-py2.py3-none-any.whl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailGrabbing.py" beforeDir="false" afterPath="$PROJECT_DIR$/emailGrabbing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/dist/bs4-0.0.1-py3.9.egg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/dist/bs4-0.0.1-py3.9.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subdomainLookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/subdomainLookup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nsi-collection-platform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nsi-collection-platform/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nsi-collection-platform/src/components/page/EmailInformationCapture.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../nsi-collection-platform/src/components/page/EmailInformationCapture.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nsi-collection-platform/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../nsi-collection-platform/src/components/page/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nsi-collection-platform/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../nsi-collection-platform/src/components/page/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nsi-collection-platform/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../nsi-collection-platform/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nsi-collection-platform/src/mock/data/interfaces.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nsi-collection-platform/src/mock/mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/../nsi-collection-platform/src/mock/mock.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +72,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -179,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.subdomainLookup">
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="NSICollectionPlatformServer" type="PythonConfigurationType" factoryName="Python">
       <module name="NSICollectionPlatformServer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -202,7 +217,51 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dnsResolve" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="class_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NSICollectionPlatformServer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/【批量下载】class_3等/Work/我们都是程序员" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/【批量下载】class_3等/Work/我们都是程序员/class_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="class_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NSICollectionPlatformServer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/【批量下载】class_3等/Work/我们都是程序员" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/【批量下载】class_3等/Work/我们都是程序员/class_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="emailGrabbing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NSICollectionPlatformServer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,7 +274,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dnsResolve.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emailGrabbing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,16 +337,20 @@
     </configuration>
     <list>
       <item itemvalue="Flask server.NSICollectionPlatformServer" />
-      <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="Python.NSICollectionPlatformServer" />
-      <item itemvalue="Python.dnsResolve" />
       <item itemvalue="Python.subdomainLookup" />
+      <item itemvalue="Python.emailGrabbing" />
+      <item itemvalue="Python.class_3" />
+      <item itemvalue="Python.class_1" />
+      <item itemvalue="Flask server.Flask (app.py)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.subdomainLookup" />
-        <item itemvalue="Python.dnsResolve" />
         <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Python.subdomainLookup" />
+        <item itemvalue="Python.emailGrabbing" />
+        <item itemvalue="Python.class_1" />
+        <item itemvalue="Python.class_3" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +365,7 @@
       <workItem from="1620830397122" duration="4228000" />
       <workItem from="1620904790056" duration="223000" />
       <workItem from="1620905014591" duration="14579000" />
-      <workItem from="1620956450547" duration="314000" />
+      <workItem from="1620956450547" duration="10030000" />
     </task>
     <servers />
   </component>
@@ -324,60 +387,13 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="154" y="327" key="#SQL_Dialects" timestamp="1620836165149">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="154" y="327" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1620836165149" />
-    <state x="410" y="166" width="1099" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620834856148">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="410" y="166" width="1099" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620834856148" />
-    <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1620905011837">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="687" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1620905011837" />
-    <state width="1867" height="332" key="GridCell.Tab.0.bottom" timestamp="1620920194089">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620920194089" />
-    <state width="1867" height="332" key="GridCell.Tab.0.center" timestamp="1620920194089">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="332" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620920194089" />
-    <state width="1867" height="332" key="GridCell.Tab.0.left" timestamp="1620920194089">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="332" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620920194089" />
-    <state width="1867" height="332" key="GridCell.Tab.0.right" timestamp="1620920194089">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="332" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620920194089" />
-    <state width="1867" height="332" key="GridCell.Tab.1.bottom" timestamp="1620920194089">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="332" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620920194089" />
-    <state width="1867" height="332" key="GridCell.Tab.1.center" timestamp="1620920194089">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="332" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620920194089" />
-    <state width="1867" height="332" key="GridCell.Tab.1.left" timestamp="1620920194089">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="332" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620920194089" />
-    <state width="1867" height="332" key="GridCell.Tab.1.right" timestamp="1620920194089">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="332" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620920194089" />
-    <state x="344" y="78" key="SettingsEditor" timestamp="1620910859920">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="344" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1620910859920" />
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1620837379682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$subdomainLookup.coverage" NAME="subdomainLookup Coverage Results" MODIFIED="1620916366073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$emailGrabbing.coverage" NAME="emailGrabbing Coverage Results" MODIFIED="1620973849774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$dnsResolve.coverage" NAME="dnsResolve Coverage Results" MODIFIED="1620911213458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$subdomainLookup.coverage" NAME="subdomainLookup Coverage Results" MODIFIED="1620974127621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$class_1.coverage" NAME="class_1 Coverage Results" MODIFIED="1620972936628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/【批量下载】class_3等/Work/我们都是程序员" />
+    <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$class_3.coverage" NAME="class_3 Coverage Results" MODIFIED="1620972148897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/【批量下载】class_3等/Work/我们都是程序员" />
     <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$NSICollectionPlatformServer.coverage" NAME="NSICollectionPlatformServer Coverage Results" MODIFIED="1620918804005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
