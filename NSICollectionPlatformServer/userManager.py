@@ -37,7 +37,7 @@ def valid_login(username, password):
     :param password: 密码
     :return:
     """
-    password = create_token(password)
+    password = create_token(username+password)
     sql = 'SELECT * FROM USER WHERE username="' + username + '" AND password="' + password + '"'
     return db.fetchone(sql=sql)
 
@@ -49,7 +49,7 @@ def user_register(username, password):
     :param password: 密码
     :return:
     """
-    password = create_token(password)
+    password = create_token(username+password)
     print(password)
     sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
     count = db.fetchone(sql_select)
@@ -62,7 +62,7 @@ def user_register(username, password):
 
 
 def user_add(username, password, role):
-    password = create_token(password)
+    password = create_token(username+password)
     sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
     count = db.fetchone(sql_select)
     if count["COUNT(1)"] >= 1:
@@ -80,8 +80,8 @@ def user_delete(user_id):
 
 
 def user_edit(user_id, username, password, role):
-    password = create_token(password)
-    sql_edit = 'UPDATE USER SET `password`="' + password + '", `role`="' + role + '" WHERE `username`="' + username + '"'
+    password = create_token(username+password)
+    sql_edit = 'UPDATE USER SET `password`="' + password + '", `role`="' + role + '" WHERE `user_id`="' + str(user_id) + '"'
     db.execute(sql_edit)
     return True
 
