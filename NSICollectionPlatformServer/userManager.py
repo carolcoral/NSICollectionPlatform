@@ -51,7 +51,7 @@ def user_register(username, password):
     """
     password = create_token(password)
     print(password)
-    sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '" AND `password`="' + password + '"'
+    sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
     count = db.fetchone(sql_select)
     if count["COUNT(1)"] >= 1:
         return False
@@ -63,9 +63,9 @@ def user_register(username, password):
 
 def user_add(username, password, role):
     password = create_token(password)
-    sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '" AND `password`="' + password + '"'
+    sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
     count = db.fetchone(sql_select)
-    if count >= 1:
+    if count["COUNT(1)"] >= 1:
         return False
     else:
         sql_insert = 'INSERT INTO USER (`username`, `password`, `role`) VALUES ("' + username + '", "' + password + '", "' + role + '") '
@@ -74,14 +74,14 @@ def user_add(username, password, role):
 
 
 def user_delete(user_id):
-    sql_delete = 'DELETE FROM USER WHERE `id`="' + user_id + '"'
+    sql_delete = 'DELETE FROM USER WHERE `id`="' + str(user_id) + '"'
     db.execute(sql_delete)
     return True
 
 
 def user_edit(user_id, username, password, role):
     password = create_token(password)
-    sql_edit = 'UPDATE USER SET `username`="' + username + '", `password`="' + password + '", `role`="' + role + '" WHERE `id`="' + user_id + '"'
+    sql_edit = 'UPDATE USER SET `password`="' + password + '", `role`="' + role + '" WHERE `username`="' + username + '"'
     db.execute(sql_edit)
     return True
 
