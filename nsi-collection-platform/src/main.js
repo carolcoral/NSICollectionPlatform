@@ -33,7 +33,7 @@ const i18n = new VueI18n({
 router.beforeEach((to, from, next) => {
     document.title = `${to.meta.title} | nsi-collection-platform`;
     const role = localStorage.getItem('token');
-    if (!role && to.path !== '/login') {
+    if (!role && to.path !== '/login' && to.path !== '/register') {
         next('/login');
     } else if (to.meta.permission) {
         // 如果是管理员权限则可进入，这里只是简单的模拟管理员权限而已

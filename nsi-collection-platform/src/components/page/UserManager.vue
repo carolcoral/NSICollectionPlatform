@@ -11,9 +11,9 @@
       <!--工具框-->
       <div class="handle-box">
         <el-button type="primary" icon="el-icon-document-add" @click="handleAdd" class="handle-del mr10">新增</el-button>
-<!--        <el-input v-model="query.name" placeholder="任意关键词"  style="float: none; width: 20%; margin: 0 10px 10px 0">-->
-<!--          <el-button type="primary" icon="el-icon-search" @click="listUserInfo(true)" slot="append">搜索</el-button>-->
-<!--        </el-input>-->
+        <!--        <el-input v-model="query.name" placeholder="任意关键词"  style="float: none; width: 20%; margin: 0 10px 10px 0">-->
+        <!--          <el-button type="primary" icon="el-icon-search" @click="listUserInfo(true)" slot="append">搜索</el-button>-->
+        <!--        </el-input>-->
       </div>
 
       <!--列表-->
@@ -29,8 +29,11 @@
         <el-table-column prop="updateTime" label="更新时间" min-width="100" sortable></el-table-column>
         <el-table-column label="操作" min-width="150">
           <template scope="scope">
-            <el-button type="warning" size="small" @click="handleEdit(scope.$index, scope.row)" plain>编辑</el-button>
-            <el-button type="danger" size="small" @click="handleDelete(scope.$index, scope.row)" plain>删除</el-button>
+            <el-button type="warning" size="small" @click="handleEdit(scope.$index, scope.row)" plain>修改密码</el-button>
+            <el-button type="primary" size="small" @click="changeAuthority(scope.$index, scope.row)" plain v-if="scope.row.username==='admin'" disabled>修改权限</el-button>
+            <el-button type="primary" size="small" @click="changeAuthority(scope.$index, scope.row)" plain v-if="scope.row.username!=='admin'">修改权限</el-button>
+            <el-button type="danger" size="small" @click="handleDelete(scope.$index, scope.row)" plain v-if="scope.row.username==='admin'" disabled>删除</el-button>
+            <el-button type="danger" size="small" @click="handleDelete(scope.$index, scope.row)" plain v-if="scope.row.username!=='admin'">删除</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -76,16 +79,16 @@
           <el-form-item label="重复密码" prop="desc">
             <el-input v-model="editForm.rePassword" auto-complete="off" placeholder="请确认密码" type="password"></el-input>
           </el-form-item>
-          <el-form-item label="角色" prop="service">
-            <el-select v-model="editForm.role" placeholder="请选择用户角色">
-              <el-option v-for="item in roleType"
-                         :key="item.value"
-                         :label="item.label"
-                         :value="item.value"
-                         :disabled="item.disabled">
-              </el-option>
-            </el-select>
-          </el-form-item>
+<!--          <el-form-item label="角色" prop="service">-->
+<!--            <el-select v-model="editForm.role" placeholder="请选择用户角色">-->
+<!--              <el-option v-for="item in roleType"-->
+<!--                         :key="item.value"-->
+<!--                         :label="item.label"-->
+<!--                         :value="item.value"-->
+<!--                         :disabled="item.disabled">-->
+<!--              </el-option>-->
+<!--            </el-select>-->
+<!--          </el-form-item>-->
         </el-form>
         <div slot="footer" class="dialog-footer">
           <el-button @click.native="editFormVisible = false">取消</el-button>
@@ -97,157 +100,178 @@
 </template>
 
 <script>
-import { userList, userGet, userAdd, userDelete, userEdit } from '../../api/index';
-export default {
-  name: 'UserManager',
-  data() {
-    return {
-      query: {
-        // name: ''
-      },
-      pageTotal: 0,
-      username: localStorage.getItem("user_name"),
-      //列表展示
-      dataList:[],
-      listLoading: false,
-      //新增
-      addFormVisible: false,
-      addForm: {},
-      addLoading: false,
-      //编辑
-      editFormVisible: false,
-      editForm: {},
-      editLoading: false,
-      roleType: [
-        {
-          label:"普通用户",
-          value:"user"
+    import { userList, userGet, userAdd, userDelete, userEdit, userAuthorityChange } from '../../api/index';
+    export default {
+        name: 'UserManager',
+        data() {
+            return {
+                query: {
+                    // name: ''
+                },
+                pageTotal: 0,
+                username: localStorage.getItem("user_name"),
+                //列表展示
+                dataList:[],
+                listLoading: false,
+                //新增
+                addFormVisible: false,
+                addForm: {},
+                addLoading: false,
+                //编辑
+                editFormVisible: false,
+                editForm: {},
+                editLoading: false,
+                roleType: [
+                    {
+                        label:"普通用户",
+                        value:"user"
+                    },
+                    {
+                        label:"管理员",
+                        value:"admin"
+                    }
+                ]
+            };
         },
-        {
-          label:"管理员",
-          value:"admin"
+        methods: {
+            //获取接口详情列表，
+            listUserInfo:function (search) {
+                const role = localStorage.getItem("role");
+                if ('admin' !== role){
+                    this.$message({
+                        type: 'warning',
+                        message: '您无访问当前页面的权限!'
+                    });
+                    return false;
+                }
+                userList(this.query).then((res) => {
+                    this.dataList = res;
+                });
+            },
+            //显示新增界面
+            handleAdd: function() {
+                if (this.$refs["addForm"]!==undefined) {
+                    this.$refs["addForm"].resetFields();
+                }
+                this.addFormVisible = true;
+            },
+            //新增
+            addSubmit: function () {
+                this.addLoading = true;
+                this.$refs.addForm.validate((valid) => {
+                    if (valid) {
+                        if (this.addForm.password !== this.addForm.rePassword){
+                            this.$message.error("两次密码不一致")
+                            return false;
+                        }
+                        this.$confirm('确认提交吗？', '提示', {}).then(() => {
+                            let para = Object.assign({}, this.addForm);
+                            userAdd(para).then((res) => {
+                                this.$message({
+                                    message: "新增成功",
+                                    type: 'success'
+                                });
+                                this.addFormVisible = false;
+                                this.listUserInfo();
+                            });
+                        });
+                    }
+                });
+                this.addLoading = false;
+            },
+            //显示编辑界面
+            handleEdit: function (index, row) {
+                this.editForm = {};
+                let params = {
+                    id: row.id
+                };
+                userGet(params).then(res=>{
+                    this.editForm = res;
+                });
+                this.editFormVisible = true;
+            },
+            //编辑页面
+            editSubmit: function(){
+                this.editLoading = true;
+                this.$refs.editForm.validate((valid) => {
+                    if (valid) {
+                        if (this.editForm.password !== this.editForm.rePassword){
+                            this.$message.error("两次密码不一致")
+                            return false;
+                        }
+                        this.$confirm('提示', {}).then(() => {
+                            let para = Object.assign({}, this.editForm);
+                            userEdit(para).then((res) => {
+                                this.editLoading = false;
+                                this.$message({
+                                    message: "编辑成功",
+                                    type: 'success'
+                                });
+                                this.editFormVisible = false;
+                                this.listUserInfo();
+                            });
+                        });
+                    }
+                });
+                this.editLoading = false;
+            },
+            changeAuthority: function(index, row){
+                this.$confirm('确认修改当前用户的权限吗(管理员/普通用户)？', '提示', {}).then(() => {
+                    let user_role = "";
+                    if ("user" === row.role){
+                        user_role = "admin"
+                    }else {
+                        user_role = "user"
+                    }
+                    let para = {
+                        "id": row.id,
+                        "role": user_role
+                    };
+                    userAuthorityChange(para).then((res) => {
+                        this.$message({
+                            message: "修改权限成功",
+                            type: 'success'
+                        });
+                        this.listUserInfo();
+                    });
+                });
+            },
+            handleDelete: function(index, row){
+                this.$confirm('确认删除吗？', '提示', {}).then(() => {
+                    let para = {
+                        id: row.id
+                    };
+                    userDelete(para).then((res) => {
+                        this.$message({
+                            message: "删除成功",
+                            type: 'success'
+                        });
+                        this.listUserInfo();
+                    });
+                });
+            }
+        },
+        mounted() {
+            this.query.name = "";
+            this.listUserInfo();
         }
-      ]
     };
-  },
-  methods: {
-    //获取接口详情列表，
-    listUserInfo:function (search) {
-      const role = localStorage.getItem("role");
-      if ('admin' !== role){
-        this.$message({
-          type: 'warning',
-          message: '您无访问当前页面的权限!'
-        })
-        return false;
-      }
-      userList(this.query).then((res) => {
-        this.dataList = res;
-      });
-    },
-    //显示新增界面
-    handleAdd: function() {
-      if (this.$refs["addForm"]!==undefined) {
-        this.$refs["addForm"].resetFields();
-      }
-      this.addFormVisible = true;
-    },
-    //新增
-    addSubmit: function () {
-      this.addLoading = true;
-      this.$refs.addForm.validate((valid) => {
-        if (valid) {
-          if (this.addForm.password !== this.addForm.rePassword){
-            this.$message.error("两次密码不一致")
-            return false;
-          }
-          this.$confirm('确认提交吗？', '提示', {}).then(() => {
-            let para = Object.assign({}, this.addForm);
-            userAdd(para).then((res) => {
-              this.$message({
-                message: "新增成功",
-                type: 'success'
-              });
-              this.addFormVisible = false;
-              this.listUserInfo();
-            });
-          });
-        }
-      });
-      this.addLoading = false;
-    },
-    //显示编辑界面
-    handleEdit: function (index, row) {
-      this.editForm = {};
-      let params = {
-        id: row.id
-      };
-      userGet(params).then(res=>{
-        this.editForm = res;
-      });
-      this.editFormVisible = true;
-    },
-    //编辑页面
-    editSubmit: function(){
-      this.editLoading = true;
-      this.$refs.editForm.validate((valid) => {
-        if (valid) {
-          if (this.editForm.password !== this.editForm.rePassword){
-            this.$message.error("两次密码不一致")
-            return false;
-          }
-          this.$confirm('提示', {}).then(() => {
-            let para = Object.assign({}, this.editForm);
-            userEdit(para).then((res) => {
-              this.editLoading = false;
-              this.$message({
-                message: "编辑成功",
-                type: 'success'
-              });
-              this.editFormVisible = false;
-              this.listUserInfo();
-            });
-          });
-        }
-      });
-      this.editLoading = false;
-    },
-    handleDelete: function(index, row){
-      this.$confirm('确认删除吗？', '提示', {}).then(() => {
-        let para = {
-          id: row.id
-        };
-        userDelete(para).then((res) => {
-          this.$message({
-            message: "删除成功",
-            type: 'success'
-          });
-          this.listUserInfo();
-        });
-      });
-    }
-  },
-  mounted() {
-    this.query.name = "";
-    this.listUserInfo();
-  }
-};
 </script>
 
 
 <style scoped>
-.handle-box {
-  margin-bottom: 20px;
-}
-.handle-input {
-  width: 300px;
-  display: inline-block;
-}
-.table {
-  width: 100%;
-  font-size: 14px;
-}
-.mr10 {
-  margin-right: 10px;
-}
+  .handle-box {
+    margin-bottom: 20px;
+  }
+  .handle-input {
+    width: 300px;
+    display: inline-block;
+  }
+  .table {
+    width: 100%;
+    font-size: 14px;
+  }
+  .mr10 {
+    margin-right: 10px;
+  }
 </style>

@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import { subdomainLookup } from '../../api/index';
+import { subDomainLookup } from '../../api/index';
 export default {
   name: 'SubdomainLookup',
   data() {
@@ -46,7 +46,7 @@ export default {
         this.$message.warning("域名不能为空")
         return false;
       }
-      subdomainLookup({
+      subDomainLookup({
         "domain": this.domain
       }).then((res) => {
         this.dataList = res;
@@ -54,7 +54,6 @@ export default {
     }
   },
   mounted() {
-    this.getSubDnsResolve();
   }
 };
 </script>

@@ -4,8 +4,6 @@
 from dataSource import DataSource
 import hashlib
 
-db = DataSource(host="118.24.151.27", username="admin", password="Liu947752894!", database="NSI")
-
 
 def create_token(message):
     """
@@ -18,79 +16,83 @@ def create_token(message):
     return m2.hexdigest()
 
 
-def valid_token(token=None):
-    sql = 'SELECT `password` FROM USER'
-    password_list = db.fetchall(sql)
-    token_list = []
-    for passwd in password_list:
-        token_list.append(passwd["password"])
-    if token in token_list:
+class UserManager:
+    def __init__(self, host='localhost', port=3306, username=None, password=None, database=None):
+        self.db = DataSource(host, port, username, password, database)
+
+    def valid_token(self, token=None):
+        sql = 'SELECT `password` FROM USER'
+        password_list = self.db.fetchall(sql)
+        token_list = []
+        for passwd in password_list:
+            token_list.append(passwd["password"])
+        if token in token_list:
+            return True
+        else:
+            return False
+
+    def valid_login(self, username, password):
+        """
+        登录验证
+        :param username: 用户名
+        :param password: 密码
+        :return:
+        """
+        password = create_token(username + password)
+        sql = 'SELECT * FROM USER WHERE username="' + username + '" AND password="' + password + '"'
+        return self.db.fetchone(sql=sql)
+
+    def user_register(self, username, password):
+        """
+        用户注册
+        :param username: 用户名
+        :param password: 密码
+        :return:
+        """
+        password = create_token(username + password)
+        print(password)
+        sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
+        count = self.db.fetchone(sql_select)
+        if count["COUNT(1)"] >= 1:
+            return False
+        else:
+            sql_insert = 'INSERT INTO USER (`username`, `password`) VALUES ("' + username + '", "' + password + '")'
+            self.db.execute(sql_insert)
+            return True
+
+    def user_add(self, username, password, role):
+        password = create_token(username + password)
+        sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
+        count = self.db.fetchone(sql_select)
+        if count["COUNT(1)"] >= 1:
+            return False
+        else:
+            sql_insert = 'INSERT INTO USER (`username`, `password`, `role`) VALUES ("' + username + '", "' + password + '", "' + role + '") '
+            self.db.execute(sql_insert)
+            return True
+
+    def user_delete(self, user_id):
+        sql_delete = 'DELETE FROM USER WHERE `id`="' + str(user_id) + '"'
+        self.db.execute(sql_delete)
         return True
-    else:
-        return False
 
-
-def valid_login(username, password):
-    """
-    登录验证
-    :param username: 用户名
-    :param password: 密码
-    :return:
-    """
-    password = create_token(username+password)
-    sql = 'SELECT * FROM USER WHERE username="' + username + '" AND password="' + password + '"'
-    return db.fetchone(sql=sql)
-
-
-def user_register(username, password):
-    """
-    用户注册
-    :param username: 用户名
-    :param password: 密码
-    :return:
-    """
-    password = create_token(username+password)
-    print(password)
-    sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
-    count = db.fetchone(sql_select)
-    if count["COUNT(1)"] >= 1:
-        return False
-    else:
-        sql_insert = 'INSERT INTO USER (`username`, `password`) VALUES ("' + username + '", "' + password + '")'
-        db.execute(sql_insert)
+    def user_edit(self, user_id, username, password, role):
+        password = create_token(username + password)
+        sql_edit = 'UPDATE USER SET `password`="' + password + '" WHERE `id`="' + str(user_id) + '"'
+        self.db.execute(sql_edit)
         return True
 
+    def user_list(self):
+        sql_list = 'SELECT * FROM USER'
+        return self.db.fetchall(sql_list)
 
-def user_add(username, password, role):
-    password = create_token(username+password)
-    sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
-    count = db.fetchone(sql_select)
-    if count["COUNT(1)"] >= 1:
-        return False
-    else:
-        sql_insert = 'INSERT INTO USER (`username`, `password`, `role`) VALUES ("' + username + '", "' + password + '", "' + role + '") '
-        db.execute(sql_insert)
+    def user_get(self, user_id):
+        sql_select = 'SELECT * FROM USER WHERE `id`="' + str(user_id) + '"'
+        return self.db.fetchone(sql_select)
+
+    def user_authority_change(self, user_id, role):
+        print(user_id)
+        print(role)
+        sql_edit = 'UPDATE USER SET `role`="' + role + '" WHERE `id`="' + str(user_id) + '"'
+        self.db.execute(sql_edit)
         return True
-
-
-def user_delete(user_id):
-    sql_delete = 'DELETE FROM USER WHERE `id`="' + str(user_id) + '"'
-    db.execute(sql_delete)
-    return True
-
-
-def user_edit(user_id, username, password, role):
-    password = create_token(username+password)
-    sql_edit = 'UPDATE USER SET `password`="' + password + '", `role`="' + role + '" WHERE `user_id`="' + str(user_id) + '"'
-    db.execute(sql_edit)
-    return True
-
-
-def user_list():
-    sql_list = 'SELECT * FROM USER'
-    return db.fetchall(sql_list)
-
-
-def user_get(user_id):
-    sql_select = 'SELECT * FROM USER WHERE `id`="' + user_id + '"'
-    return db.fetchone(sql_select)

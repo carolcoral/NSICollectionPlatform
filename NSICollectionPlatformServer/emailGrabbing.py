@@ -28,7 +28,7 @@ def get_http_headers():
 
 
 class EmailAccountGrabbing:
-    def __init__(self, keyword="test", email_count=10, grabbing_engine="https://www.bing.com/search", email_suffix="hotmail.com"):
+    def __init__(self, keyword="test", email_count=2, grabbing_engine="https://www.bing.com/search", email_suffix="hotmail.com"):
         self.keyword = keyword
         self.email_count = email_count
         self.grabbing_engine = grabbing_engine
@@ -63,7 +63,3 @@ class EmailAccountGrabbing:
                         "keyword": self.keyword
                     })
         return email_grabbing_result
-
-
-if __name__ == '__main__':
-    print(EmailAccountGrabbing(keyword="led").grabbing())

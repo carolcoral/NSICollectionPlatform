@@ -38,6 +38,11 @@ export default new Router({
                     path: '/PortDetection',
                     component: () => import(/* webpackChunkName: "table" */ '../components/page/PortDetection.vue'),
                     meta: { title: '端口检测' }
+                },
+                {
+                    path: '/OperationLog',
+                    component: () => import(/* webpackChunkName: "table" */ '../components/page/OperationLog.vue'),
+                    meta: { title: '操作记录' }
                 }
             ]
         },

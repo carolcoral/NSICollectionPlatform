@@ -4,7 +4,6 @@ certifi==2020.12.5
 chardet==4.0.0
 click==8.0.0
 colorama==0.4.4
-dnspython==1.15.0
 dnspython3==1.15.0
 fake-useragent==0.1.11
 Flask==2.0.0

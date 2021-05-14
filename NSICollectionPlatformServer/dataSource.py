@@ -26,10 +26,10 @@ class DataSource:
 
     def __is_connected(self):
         try:
-            self.conn.ping(reconnect=True)
+            self.db.ping(reconnect=True)
         except Exception as e:
             traceback.print_exc()
-            self.conn = pymysql.connections.Connection(host=self.host, port=self.port, user=self.username, password=self.password, database=self.database)
+            self.db = pymysql.connections.Connection(host=self.host, port=self.port, user=self.username, password=self.password, database=self.database)
 
     def fetchall(self, sql):
         self.__is_connected()

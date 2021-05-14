@@ -28,13 +28,13 @@
 
       <!--列表-->
       <el-table :data="dataList" border class="table" ref="dataList" header-cell-class-name="table-header" v-loading="listLoading">
-        <el-table-column prop="domain" label="域名" min-width="120" sortable></el-table-column>
-        <el-table-column prop="country" label="国家" min-width="80" sortable :show-overflow-tooltip="true"></el-table-column>
-        <el-table-column prop="area" label="地区" width="80" sortable :show-overflow-tooltip="true"></el-table-column>
-        <el-table-column prop="province" label="省份" min-width="80" sortable></el-table-column>
-        <el-table-column prop="city" label="城市" min-width="80" sortable></el-table-column>
-        <el-table-column prop="isp" label="运营商" min-width="80" sortable></el-table-column>
-        <el-table-column prop="ip" label="IP" min-width="80" sortable></el-table-column>
+        <el-table-column prop="domain" label="域名" min-width="80" sortable></el-table-column>
+        <el-table-column prop="ip" label="IP" min-width="60" sortable></el-table-column>
+        <el-table-column prop="country" label="国家" min-width="60" sortable :show-overflow-tooltip="true"></el-table-column>
+        <el-table-column prop="area" label="地区" min-width="60" sortable :show-overflow-tooltip="true"></el-table-column>
+        <el-table-column prop="province" label="省份" min-width="60" sortable></el-table-column>
+        <el-table-column prop="city" label="城市" min-width="60" sortable></el-table-column>
+        <el-table-column prop="isp" label="运营商" min-width="60" sortable></el-table-column>
       </el-table>
 
     </div>

@@ -51,7 +51,7 @@ export default {
       })
     },
     register: function(){
-      if (this.password !== this.rePassword){
+      if (this.param.password !== this.param.rePassword){
         this.$message.error("两次密码不一致")
         return false;
       }
