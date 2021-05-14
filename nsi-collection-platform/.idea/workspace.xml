@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98b847f7-eeca-42e7-9900-dc856361f82a" name="Default Changelist" comment="优化db当前数据页展示">
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/dnsResolve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/emailGrabbing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/Flask-2.0.0-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/Jinja2-3.0.0-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/MarkupSafe-2.0.0-cp39-cp39-win_amd64.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/PyMySQL-1.0.2-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/Werkzeug-2.0.0-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1.tar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/bs4.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/dist/bs4-0.0.1-py3.9.egg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/setup.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/bs4-0.0.1.tar/dist/bs4-0.0.1/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/certifi-2020.12.5-py2.py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/chardet-4.0.0-py2.py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/click-8.0.0-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/idna-3.1-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/itsdangerous-2.0.0-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/requests-2.25.1-py2.py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/portDetection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/subdomainLookup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/userManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nsi.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/NSICollectionPlatformServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T120943.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T120952.400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121052.400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121140.400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121209.400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121222.400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121317.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121450.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121728.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T121802.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T122313.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T122439.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T122501.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T122729.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123005.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123248.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123430.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123507.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123524.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/2021-05-13T123622.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/dataSource.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/dataSource.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1d17dWvd041Xol8gd2hcM5It5Nw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
+    <property name="ts.external.directory.path" value="G:\WebStorm 2021.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\github\NSICollectionPlatform\vue-manage-system\src\mock\data" />
+      <recent name="H:\github\NSICollectionPlatform\vue-manage-system\src\components\page" />
+      <recent name="F:\migu\vue-manage-system\src\mock\data" />
+      <recent name="F:\migu\vue-manage-system\src\components\page" />
+      <recent name="F:\migu\vue-manage-system\src\assets\icon" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="nodeJS" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98b847f7-eeca-42e7-9900-dc856361f82a" name="Default Changelist" comment="" />
+      <created>1591064358197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591064358197</updated>
+      <workItem from="1591064364274" duration="28205000" />
+      <workItem from="1591165430018" duration="593000" />
+      <workItem from="1591166751104" duration="28681000" />
+      <workItem from="1591580206612" duration="370000" />
+      <workItem from="1591580838619" duration="22123000" />
+      <workItem from="1591666408899" duration="20779000" />
+      <workItem from="1591752039905" duration="274000" />
+      <workItem from="1591752596291" duration="43014000" />
+      <workItem from="1592271681969" duration="48945000" />
+      <workItem from="1592790559359" duration="37007000" />
+      <workItem from="1593313137188" duration="2115000" />
+      <workItem from="1593422084093" duration="1617000" />
+      <workItem from="1593479120220" duration="32675000" />
+      <workItem from="1593656216966" duration="20679000" />
+      <workItem from="1594088002732" duration="25069000" />
+      <workItem from="1594607552457" duration="701000" />
+      <workItem from="1594629469286" duration="3639000" />
+      <workItem from="1594696094304" duration="3623000" />
+      <workItem from="1594781316955" duration="9476000" />
+      <workItem from="1594806381400" duration="641000" />
+      <workItem from="1594862554954" duration="22076000" />
+      <workItem from="1594956043917" duration="5235000" />
+      <workItem from="1595209116278" duration="27174000" />
+      <workItem from="1595492970248" duration="2457000" />
+      <workItem from="1595558369093" duration="9537000" />
+      <workItem from="1595580527382" duration="1063000" />
+      <workItem from="1595581647028" duration="862000" />
+      <workItem from="1597303556302" duration="2016000" />
+      <workItem from="1597802626654" duration="2494000" />
+      <workItem from="1597893662704" duration="2956000" />
+      <workItem from="1598583072788" duration="4045000" />
+      <workItem from="1603675939672" duration="141000" />
+      <workItem from="1603957954700" duration="2656000" />
+      <workItem from="1606714968578" duration="718000" />
+      <workItem from="1609724602663" duration="47463000" />
+      <workItem from="1610441692777" duration="1126000" />
+      <workItem from="1610443878233" duration="617000" />
+      <workItem from="1610507087870" duration="1051000" />
+      <workItem from="1610516240335" duration="311000" />
+      <workItem from="1610608085764" duration="4186000" />
+      <workItem from="1611195161549" duration="747000" />
+      <workItem from="1612246227172" duration="1114000" />
+      <workItem from="1612751437240" duration="274000" />
+      <workItem from="1614059014558" duration="21194000" />
+      <workItem from="1614567164841" duration="4361000" />
+      <workItem from="1620649514340" duration="1248000" />
+      <workItem from="1620829356244" duration="2706000" />
+      <workItem from="1620832095044" duration="3180000" />
+      <workItem from="1620901480362" duration="12905000" />
+    </task>
+    <task id="LOCAL-00001" summary="1. 业支列表&#10;2. 东信北邮列表&#10;3. 登录&#10;4. 计划任务&#10;5. 系统服务&#10;6. 接口列表&#10;7. 公共头&#10;8. 公共侧边栏&#10;9. 阿里云图标库&#10;10. mock数据返回接口修改list为data（与后端保持一致）">
+      <created>1591256675301</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591256675301</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改数据返回结果构造对象（原来的不符合规范，与后端接口不一致）&#10;新增iconfont服务器图标">
+      <created>1591585919558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591585919559</updated>
+    </task>
+    <task id="LOCAL-00003" summary="日志详情传送周期修改为下拉选择">
+      <created>1597305753089</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597305753089</updated>
+    </task>
+    <task id="LOCAL-00004" summary="新增ftp子路径">
+      <created>1597804860140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597804860140</updated>
+    </task>
+    <task id="LOCAL-00005" summary="计划任务多db样式兼容&#10;计划任务历史记录数量增加">
+      <created>1597904022771</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597904022771</updated>
+    </task>
+    <task id="LOCAL-00006" summary="日志总线功能改造&#10;兼容新增字段 log_file_name">
+      <created>1609899690670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609899690670</updated>
+    </task>
+    <task id="LOCAL-00007" summary="日志总线功能改造&#10;兼容新增字段 log_file_name&#10;改造刷新功能">
+      <created>1609927598683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609927598683</updated>
+    </task>
+    <task id="LOCAL-00008" summary="优化刷新界面功能">
+      <created>1610012724084</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610012724084</updated>
+    </task>
+    <task id="LOCAL-00009" summary="优化排序">
+      <created>1610444476453</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610444476453</updated>
+    </task>
+    <task id="LOCAL-00010" summary="丑化刷新页面提示">
+      <created>1610507802974</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610507802974</updated>
+    </task>
+    <task id="LOCAL-00011" summary="日志文件名特征">
+      <created>1610516513970</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610516513970</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修复显示问题">
+      <created>1610616264867</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610616264867</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修复kafkaTemp新增功能中对log_file_name字段的数据更新问题">
+      <created>1611195658405</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611195658405</updated>
+    </task>
+    <task id="LOCAL-00014" summary="计划任务新增手动恢复操作">
+      <created>1614580651639</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614580651639</updated>
+    </task>
+    <task id="LOCAL-00015" summary="优化db当前数据页展示">
+      <created>1614654700832</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614654700832</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1. 业支列表&#10;2. 东信北邮列表&#10;3. 登录&#10;4. 计划任务&#10;5. 系统服务&#10;6. 接口列表&#10;7. 公共头&#10;8. 公共侧边栏&#10;9. 阿里云图标库&#10;10. mock数据返回接口修改list为data（与后端保持一致）" />
+    <MESSAGE value="修改数据返回结果构造对象（原来的不符合规范，与后端接口不一致）&#10;新增iconfont服务器图标" />
+    <MESSAGE value="日志详情传送周期修改为下拉选择" />
+    <MESSAGE value="新增ftp子路径" />
+    <MESSAGE value="计划任务多db样式兼容&#10;计划任务历史记录数量增加" />
+    <MESSAGE value="日志总线功能改造&#10;兼容新增字段 log_file_name" />
+    <MESSAGE value="日志总线功能改造&#10;兼容新增字段 log_file_name&#10;改造刷新功能" />
+    <MESSAGE value="优化刷新界面功能" />
+    <MESSAGE value="优化排序" />
+    <MESSAGE value="丑化刷新页面提示" />
+    <MESSAGE value="日志文件名特征" />
+    <MESSAGE value="修复显示问题" />
+    <MESSAGE value="修复kafkaTemp新增功能中对log_file_name字段的数据更新问题" />
+    <MESSAGE value="计划任务新增手动恢复操作" />
+    <MESSAGE value="优化db当前数据页展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化db当前数据页展示" />
+  </component>
+</project>
