@@ -1,13 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# -*- coding: utf-8 -*-
-
-# www.52wmb.com
-# 我真的是客服
-# 2016.7.30
-# v1.0.1
-
 import re
 import requests
 from bs4 import BeautifulSoup

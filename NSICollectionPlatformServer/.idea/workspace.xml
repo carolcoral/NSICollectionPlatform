@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170acc99-a63b-462c-abfd-cf97f0ec009c" name="Default Changelist" comment="" />
+    <list default="true" id="170acc99-a63b-462c-abfd-cf97f0ec009c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailGrabbing.py" beforeDir="false" afterPath="$PROJECT_DIR$/emailGrabbing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nsi-collection-platform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nsi-collection-platform/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.userManager">
+  <component name="RunManager" selected="Flask server.NSICollectionPlatformServer">
     <configuration name="NSICollectionPlatformServer" type="PythonConfigurationType" factoryName="Python">
       <module name="NSICollectionPlatformServer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -361,7 +366,9 @@
       <workItem from="1620905014591" duration="14579000" />
       <workItem from="1620956450547" duration="18082000" />
       <workItem from="1621001854433" duration="9319000" />
-      <workItem from="1621011976137" duration="14000" />
+      <workItem from="1621011976137" duration="626000" />
+      <workItem from="1621056487608" duration="821000" />
+      <workItem from="1621059492515" duration="2173000" />
     </task>
     <servers />
   </component>
@@ -386,7 +393,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$emailGrabbing.coverage" NAME="emailGrabbing Coverage Results" MODIFIED="1620973849774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$dnsResolve.coverage" NAME="dnsResolve Coverage Results" MODIFIED="1620911213458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$NSICollectionPlatformServer.coverage" NAME="NSICollectionPlatformServer Coverage Results" MODIFIED="1621011419180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$NSICollectionPlatformServer.coverage" NAME="NSICollectionPlatformServer Coverage Results" MODIFIED="1621060226742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1620977658953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$subdomainLookup.coverage" NAME="subdomainLookup Coverage Results" MODIFIED="1620974127621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NSICollectionPlatformServer$userManager.coverage" NAME="userManager Coverage Results" MODIFIED="1621004171271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
