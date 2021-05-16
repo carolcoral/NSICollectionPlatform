@@ -42,7 +42,7 @@ class UserManager:
         sql = 'SELECT * FROM USER WHERE username="' + username + '" AND password="' + password + '"'
         return self.db.fetchone(sql=sql)
 
-    def user_register(self, username, password):
+    def user_register(self, username, password, role):
         """
         用户注册
         :param username: 用户名
@@ -50,13 +50,12 @@ class UserManager:
         :return:
         """
         password = create_token(username + password)
-        print(password)
         sql_select = 'SELECT COUNT(1) FROM USER WHERE `username`="' + username + '"'
         count = self.db.fetchone(sql_select)
         if count["COUNT(1)"] >= 1:
             return False
         else:
-            sql_insert = 'INSERT INTO USER (`username`, `password`) VALUES ("' + username + '", "' + password + '")'
+            sql_insert = 'INSERT INTO USER (`username`, `password`, `role`) VALUES ("' + username + '", "' + password + '", "' + role+'")'
             self.db.execute(sql_insert)
             return True
 
@@ -91,8 +90,6 @@ class UserManager:
         return self.db.fetchone(sql_select)
 
     def user_authority_change(self, user_id, role):
-        print(user_id)
-        print(role)
         sql_edit = 'UPDATE USER SET `role`="' + role + '" WHERE `id`="' + str(user_id) + '"'
         self.db.execute(sql_edit)
         return True

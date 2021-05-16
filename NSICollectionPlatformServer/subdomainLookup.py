@@ -46,7 +46,3 @@ def sub_domain_lookup(domain):
                 href = href.split("?")[0]
                 domain_list[href] = h2.find("a").text
     return domain_list
-
-
-if __name__ == '__main__':
-    print(sub_domain_lookup("baidu.com"))

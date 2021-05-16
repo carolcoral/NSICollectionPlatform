@@ -36,27 +36,28 @@ def result(code="000000", desc="SUCCESS", data=None):
     return res
 
 
-# @app.before_request
-# def request_handle():
-#     """
-#     请求拦截器，根据token统一判断是否可用
-#     :return: 拦截结果
-#     """
-#     print(request.url)
-#     print(request.headers)
-#     url = request.url.split("/admin")[1]
-#     print(url)
-#     url = url.split("?")[0]
-#     print(url)
-#     if url not in ["/login", "/register"]:
-#         flag = False
-#         if "token" in request.headers:
-#             token = request.headers['token']
-#             flag = user_manager.valid_token(token)
-#         if not flag:
-#             response = make_response(result(code="100000", desc="valid token error"))
-#             response.status = 401
-#             return response
+@app.before_request
+def request_handle():
+    """
+    请求拦截器，根据token统一判断是否可用
+    :return: 拦截结果
+    """
+    print(request.url)
+    print(request.headers)
+    url = request.url.split("/admin")[1]
+    print(url)
+    url = url.split("?")[0]
+    print(url)
+    if url not in ["/login", "/register"]:
+        flag = False
+        if "token" in request.headers:
+            token = request.headers['token']
+            flag = user_manager.valid_token(token)
+        if not flag:
+            response = make_response(result(code="100000", desc="valid token error"))
+            response.status = 401
+            return response
+
 
 def log_operation(request_info, desc="", data=None):
     """
@@ -108,7 +109,8 @@ def register():
     """
     username = request.json['username']
     password = request.json['password']
-    __res = user_manager.user_register(username, password)
+    role = request.json['role']
+    __res = user_manager.user_register(username, password, role)
     if __res:
         res = result(data="用户注册成功")
     else:

@@ -31,10 +31,8 @@ def __detect_port(ip, port):
     try:
         s.connect((ip, int(port)))
         s.shutdown(2)
-        print('{0} is open'.format(port))
         return True
     except:
-        print('{0} is close'.format(port))
         return False
 
 

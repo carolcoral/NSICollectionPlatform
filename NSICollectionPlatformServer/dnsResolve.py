@@ -53,7 +53,3 @@ def get_ip_info(ip):
         ip_query["city"] = i['CITY_CN']
         ip_query["isp"] = i['ISP_CN']
     return ip_query
-
-
-if __name__ == '__main__':
-    print(resolution_a("www.baidu.com"))
