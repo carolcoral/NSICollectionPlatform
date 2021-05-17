@@ -22,12 +22,23 @@ def get_http_headers():
 
 class EmailAccountGrabbing:
     def __init__(self, keyword="test", email_count=2, grabbing_engine="https://www.bing.com/search", email_suffix="hotmail.com"):
+        """
+        邮箱账号抓取初始化
+        :param keyword: 关键字，不能为空，例如行业关键字、内容关键字等
+        :param email_count: 抓取页数，默认每页10条信息，总抓取账号数<=email_count*10，需要注意email_count过大会导致连接超时
+        :param grabbing_engine: 抓取账号的搜索引擎，默认为bing引擎，可以修改为google的引擎，但是修改后需要配置代理，否则无法正常访问
+        :param email_suffix: 邮箱后缀，用户过滤账号使用。例如: qq.com / hotmail.com
+        """
         self.keyword = keyword
         self.email_count = email_count
         self.grabbing_engine = grabbing_engine
         self.email_suffix = email_suffix
 
     def grabbing(self):
+        """
+        账号抓取服务
+        :return: .
+        """
         email_grabbing_result = []
         for i in range(1, self.email_count):
             j = 1
@@ -56,3 +67,8 @@ class EmailAccountGrabbing:
                         "keyword": self.keyword
                     })
         return email_grabbing_result
+
+
+if __name__ == '__main__':
+    grabbing_result = EmailAccountGrabbing(keyword="led", email_suffix="qq.com").grabbing()
+    print(grabbing_result)

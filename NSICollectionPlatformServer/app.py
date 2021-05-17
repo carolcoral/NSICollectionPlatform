@@ -24,7 +24,7 @@ logOperation = Operation.OperationLog(**data_source)
 user_manager = User.UserManager(**data_source)
 
 if __name__ == '__main__':
-    app.run(host="127.0.0.1", port=8080)
+    app.run()
 
 
 def result(code="000000", desc="SUCCESS", data=None):

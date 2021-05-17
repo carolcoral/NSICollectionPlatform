@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="98b847f7-eeca-42e7-9900-dc856361f82a" name="Default Changelist" comment="优化db当前数据页展示">
       <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/dnsResolve.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/dnsResolve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dist/dnspython-2.1.0-py3.9.egg" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dist/dnspython-2.1.0-py3.9.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/dependency_links.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/requires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/top_level.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/Register.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +71,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -130,6 +135,7 @@
       <workItem from="1621009999606" duration="1477000" />
       <workItem from="1621056519363" duration="1573000" />
       <workItem from="1621137498314" duration="1453000" />
+      <workItem from="1621219703462" duration="1795000" />
     </task>
     <task id="LOCAL-00001" summary="1. 业支列表&#10;2. 东信北邮列表&#10;3. 登录&#10;4. 计划任务&#10;5. 系统服务&#10;6. 接口列表&#10;7. 公共头&#10;8. 公共侧边栏&#10;9. 阿里云图标库&#10;10. mock数据返回接口修改list为data（与后端保持一致）">
       <created>1591256675301</created>
@@ -240,7 +246,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -257,13 +263,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

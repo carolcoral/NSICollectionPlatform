@@ -7,6 +7,10 @@ from fake_useragent import UserAgent
 
 
 def __get_http_headers():
+    """
+    根据不同浏览器组装header请求信息
+    :return: header
+    """
     try:
         ua = UserAgent()
         header = {
@@ -19,9 +23,15 @@ def __get_http_headers():
     return header
 
 
-def sub_domain_lookup(domain):
+def sub_domain_lookup(domain, resolve_count=2):
+    """
+    子域名解析（默认解析2页）
+    :param domain: 域名
+    :param resolve_count: 解析页数
+    :return: 关联子域名
+    """
     domain_list = {}
-    for n in range(1, 2):
+    for n in range(1, resolve_count):
         j = 1
         if n > 1:
             j = n * 10 - 1
@@ -46,3 +56,9 @@ def sub_domain_lookup(domain):
                 href = href.split("?")[0]
                 domain_list[href] = h2.find("a").text
     return domain_list
+
+
+if __name__ == '__main__':
+    __domain = "baidu.com"
+    resolve_result = sub_domain_lookup(domain=__domain)
+    print(resolve_result)

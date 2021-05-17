@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import socket
-import dns.resolver
+import dns
 import re
 
 
 def __check_ip(ip):
+    """
+    类型判断，判断当前输入是否为ip
+    :param ip: 域名或ip
+    :return: 检测结果
+    """
     p = re.compile('^((25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d?)$')
     if p.match(ip):
         return True
@@ -14,6 +19,11 @@ def __check_ip(ip):
 
 
 def __resolution_a(domain):
+    """
+    DNS解析，根据域名解析对应的IP地址集合
+    :param domain: 域名
+    :return: ip集合
+    """
     query_list = []
     a = dns.resolver.resolve(domain, 'A')
     for i in a.response.answer:
@@ -25,7 +35,11 @@ def __resolution_a(domain):
 
 
 def __detect_port(ip, port):
-    """检测ip上的端口是否开放
+    """
+    检测ip上的端口是否开放
+    :param ip: ip或域名
+    :param port: 端口
+    :return: 端口是否开启
     """
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
@@ -37,6 +51,12 @@ def __detect_port(ip, port):
 
 
 def detection(domain, port):
+    """
+    主函数
+    :param domain: 域名或ip
+    :param port: 端口
+    :return: 检测结果
+    """
     is_ip = __check_ip(domain)
     __data = []
     if is_ip:
@@ -56,3 +76,9 @@ def detection(domain, port):
                 "status": port_status
             })
     return __data
+
+
+if __name__ == '__main__':
+    __domain = "baidu.com"
+    __check_result = detection(domain=__domain, port=3306)
+    print(__check_result)
