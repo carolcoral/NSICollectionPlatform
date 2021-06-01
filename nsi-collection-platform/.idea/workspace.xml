@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98b847f7-eeca-42e7-9900-dc856361f82a" name="Default Changelist" comment="优化db当前数据页展示">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="98b847f7-eeca-42e7-9900-dc856361f82a" name="Default Changelist" comment="优化db当前数据页展示" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,6 +129,7 @@
       <workItem from="1621219703462" duration="1795000" />
       <workItem from="1621315270582" duration="1116000" />
       <workItem from="1622537811796" duration="183000" />
+      <workItem from="1622538495707" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="1. 业支列表&#10;2. 东信北邮列表&#10;3. 登录&#10;4. 计划任务&#10;5. 系统服务&#10;6. 接口列表&#10;7. 公共头&#10;8. 公共侧边栏&#10;9. 阿里云图标库&#10;10. mock数据返回接口修改list为data（与后端保持一致）">
       <created>1591256675301</created>
