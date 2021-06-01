@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98b847f7-eeca-42e7-9900-dc856361f82a" name="Default Changelist" comment="优化db当前数据页展示">
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/dnsResolve.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/dnsResolve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dist/dnspython-2.1.0-py3.9.egg" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dist/dnspython-2.1.0-py3.9.egg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/dependency_links.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/requires.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSICollectionPlatformServer/packages/dnspython-2.1.0/dnspython.egg-info/top_level.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +36,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="H:/migu/vue-admin-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../pd/vue-imooc-ebook" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,7 +46,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="ts.external.directory.path" value="D:\WebStorm\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -136,6 +129,8 @@
       <workItem from="1621056519363" duration="1573000" />
       <workItem from="1621137498314" duration="1453000" />
       <workItem from="1621219703462" duration="1795000" />
+      <workItem from="1621315270582" duration="1116000" />
+      <workItem from="1622537811796" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="1. 业支列表&#10;2. 东信北邮列表&#10;3. 登录&#10;4. 计划任务&#10;5. 系统服务&#10;6. 接口列表&#10;7. 公共头&#10;8. 公共侧边栏&#10;9. 阿里云图标库&#10;10. mock数据返回接口修改list为data（与后端保持一致）">
       <created>1591256675301</created>
@@ -291,31 +286,5 @@
     <MESSAGE value="计划任务新增手动恢复操作" />
     <MESSAGE value="优化db当前数据页展示" />
     <option name="LAST_COMMIT_MESSAGE" value="优化db当前数据页展示" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1621001516851">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1621001516851" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1621009946013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621009946013" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1621009946013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621009946013" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1621009946013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621009946013" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1621009946013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621009946013" />
-    <state x="461" y="161" key="SettingsEditor" timestamp="1621009927388">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1621009927388" />
   </component>
 </project>
